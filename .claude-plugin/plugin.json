@@ -1,0 +1,6 @@
+{
+  "name": "personal",
+  "description": "Personal skills for Claude Chat and Cowork: alignment plans and task conclusions saved to OneDrive.",
+  "version": "1.2.0",
+  "author": { "name": "personal" }
+}

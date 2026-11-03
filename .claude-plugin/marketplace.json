@@ -1,0 +1,12 @@
+{
+  "name": "personal-marketplace",
+  "description": "Personal plugin marketplace for Claude Chat, Cowork and Claude Code.",
+  "owner": { "name": "personal" },
+  "plugins": [
+    {
+      "name": "personal",
+      "source": "./",
+      "description": "Personal skills for Claude Chat and Cowork: alignment plans and task conclusions saved to OneDrive."
+    }
+  ]
+}

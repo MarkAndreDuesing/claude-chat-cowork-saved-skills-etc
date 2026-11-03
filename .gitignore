@@ -1,0 +1,9 @@
+# Public repo for Chat/Cowork skills only. Explicit allowlist: a skill is published only if named here.
+# Work/company skills stay OneDrive-only (Claude Code loads them directly). Never add them here.
+/*
+!/.gitignore
+!/.claude-plugin/
+!/skills/
+/skills/*
+!/skills/conclude/
+!/skills/alignment-plan/
