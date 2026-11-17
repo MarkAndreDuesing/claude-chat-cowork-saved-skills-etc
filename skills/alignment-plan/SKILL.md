@@ -18,7 +18,7 @@ say so in the plan as an open question instead of guessing. Do not add ideas or 
 
 **File name:** `<Jira key or repo>_<short-kebab-slug>.md`, e.g. `PROJ-123_short-topic.md`
 (use `$ARGUMENTS` if given). One file per task: if it already exists, read it and update it in place
-(bump `updated`, keep a short `## Revisions` log at the end) rather than creating a new file.
+(bump `updated`) rather than creating a new file.
 
 **Content** (concise, written for a colleague who has not seen this session):
 
