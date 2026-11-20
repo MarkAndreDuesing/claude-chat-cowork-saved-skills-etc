@@ -44,7 +44,8 @@ plan: <relative link to the plan, if any>
 ```
 
 Never include secrets, tokens, credentials or customer personal data; refer to where they live instead.
-Keep it short enough to read in two minutes. Give the user the file path as a link.
+Be exhaustive: record every change, decision, reason, rejected option, command and open point from the session.
+Completeness wins over brevity here; the length and writing rules of the `communication` skill don't apply, its facts rules do. Give the user the file path as a link.
 
 **Then archive this session** (the user asked for this as part of `/conclude`):
 1. Only in the Claude desktop app, i.e. when `mcp__ccd_session_mgmt__archive_session` is available (load it via ToolSearch

@@ -6,7 +6,7 @@
     {
       "name": "personal",
       "source": "./",
-      "description": "Personal skills for Claude Chat and Cowork: alignment plans and task conclusions saved to OneDrive."
+      "description": "Personal skills for Claude Chat and Cowork: communication rules, work checks, text tightening, alignment plans and task conclusions."
     }
   ]
 }

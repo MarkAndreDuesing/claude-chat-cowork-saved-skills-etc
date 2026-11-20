@@ -1,6 +1,6 @@
 {
   "name": "personal",
-  "description": "Personal skills for Claude Chat and Cowork: alignment plans and task conclusions saved to OneDrive.",
-  "version": "1.2.0",
+  "description": "Personal skills for Claude Chat and Cowork: communication rules, work checks, text tightening, alignment plans and task conclusions.",
+  "version": "1.3.0",
   "author": { "name": "personal" }
 }
