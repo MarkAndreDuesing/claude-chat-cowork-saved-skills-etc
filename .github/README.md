@@ -2,6 +2,10 @@
 
 A plugin marketplace with one plugin, `personal`.
 
+## Non-code skills
+
+These also work for code.
+
 | Skill | What it does | Loads |
 |---|---|---|
 | `communication` | Rules for every reply and written text: only the needed points, verified facts only, literal answers, evidence with exact location, no invented extras, plain direct writing | on trigger |
@@ -10,6 +14,11 @@ A plugin marketplace with one plugin, `personal`.
 | `tighten` | Shortens and sharpens a text without losing content | on trigger |
 | `alignment-plan` | Writes a plan for human review to `Claude/notes/plans` in your OneDrive, after a research-completeness checklist | on trigger |
 | `conclude` | Writes an exhaustive conclusion of a finished task to `Claude/notes/conclusions` in your OneDrive, so it can be redone later | manual (`/conclude`) |
+
+## Code skills
+
+| Skill | What it does | Loads |
+|---|---|---|
 | `minimise` | Cuts a finished change down to what the stated requirements need, keeping tests green | on trigger |
 | `coding-rules` | Coding and git rules: think first, simplest code, surgical changes, comments, safe operations, ask once before git writes, never merge protected branches, commit hygiene | on trigger |
 | `ticket-draft` | Drafts issue-tracker tickets (bugs, tasks, sub-tasks) from a template | on trigger |
