@@ -1,6 +1,6 @@
 ---
 name: conclude
-description: Write the conclusion of the current session's task to OneDrive\Claude\notes\conclusions, so the outcome and its reasoning can be recreated later. Only when the user says the task is done and asks for it.
+description: Write the conclusion of the current session's task to the user's OneDrive Claude/notes/conclusions folder, so the outcome and its reasoning can be recreated later. Only when the user says the task is done and asks for it.
 argument-hint: "[ticket or short task name]"
 disable-model-invocation: true
 ---
@@ -9,26 +9,25 @@ disable-model-invocation: true
 > Workaround (tested 2026-11-02): in a local terminal run `claude --teleport`, pick the cloud session, then run `/conclude`
 > in the teleported local copy. The original cloud session stays; archive it by hand in the Claude desktop app sidebar.
 
-Write a conclusion of the task done in this session to OneDrive `Claude/notes/conclusions/`:
-- **Claude Code on the laptop** (the folder exists locally): write the file to
-  `%OneDriveCommercial%\Claude\notes\conclusions\`.
-- **Chat or Cowork** (no local folder): use the Microsoft 365 connector. Find the folder with `sharepoint_folder_search`
-  (name `conclusions`, pick the one whose webUrl ends in `/Documents/Claude/notes/conclusions` in the user's own OneDrive),
-  list it with `read_resource` to check for an existing file, then `sharepoint_upload_file` into it
-  (`conflictBehavior: "replace"` only when updating that same task's file). If the connector is not connected, say so and
-  show the conclusion in the reply instead. `${CLAUDE_SESSION_ID}` is not available there; put the chat title instead.
+Write a conclusion of the task done in this session to the user's OneDrive folder `Claude/notes/conclusions/`:
+- **Claude Code with a local OneDrive** (the folder exists locally, e.g. under `%OneDriveCommercial%` or `%OneDrive%`): write the file there.
+- **Chat or Cowork** (no local folder): use the Microsoft 365 / OneDrive connector if one is connected. Find the folder
+  (name `conclusions`, the one whose web URL ends in `/Documents/Claude/notes/conclusions` in the user's own OneDrive),
+  list it to check for an existing file, then upload the file into it
+  (replace only when updating that same task's file). If no connector is connected, say so and
+  show the conclusion in the reply instead. If the session ID is not available, put the chat title instead.
 
 Purpose: if this laptop and the session history are lost, someone (or a new Claude session) can understand
 what was done, why, and redo it from this file alone. Record facts from this session only: what was
 actually done and verified, not what was planned. Say plainly what was not done or not verified.
 
-**File name:** `<YYYY-MM-DD>_<Jira key or repo>_<short-kebab-slug>.md` (use `$ARGUMENTS` if given).
+**File name:** `<YYYY-MM-DD>_<ticket key or topic>_<short-kebab-slug>.md` (use `$ARGUMENTS` if given).
 If a conclusion for the same task already exists, update it in place instead of creating another.
 If an alignment plan for the task exists in `..\plans\`, link it and set its `status` to `done` or `superseded`.
 
 ```markdown
 ---
-task: <Jira key / title>
+task: <ticket key / title>
 date: <YYYY-MM-DD>
 repos: [<repos / folders touched>]
 session: ${CLAUDE_SESSION_ID}

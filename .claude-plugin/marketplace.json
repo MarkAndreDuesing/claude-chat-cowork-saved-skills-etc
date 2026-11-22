@@ -1,12 +1,14 @@
 {
   "name": "personal-marketplace",
   "description": "Personal plugin marketplace for Claude Chat, Cowork and Claude Code.",
-  "owner": { "name": "personal" },
+  "owner": {
+    "name": "personal"
+  },
   "plugins": [
     {
       "name": "personal",
       "source": "./",
-      "description": "Personal skills for Claude Chat and Cowork: communication rules, work checks, text tightening, alignment plans and task conclusions."
+      "description": "Personal skills for Claude Chat, Cowork and Claude Code: communication rules, explanations, work checks, text tightening, alignment plans, task conclusions, change minimising, coding and git rules, ticket and design-doc templates."
     }
   ]
 }

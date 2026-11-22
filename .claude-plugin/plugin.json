@@ -1,6 +1,8 @@
 {
   "name": "personal",
-  "description": "Personal skills for Claude Chat and Cowork: communication rules, work checks, text tightening, alignment plans and task conclusions.",
-  "version": "1.3.0",
-  "author": { "name": "personal" }
+  "description": "Personal skills for Claude Chat, Cowork and Claude Code: communication rules, explanations, work checks, text tightening, alignment plans, task conclusions, change minimising, coding and git rules, ticket and design-doc templates.",
+  "version": "1.4.0",
+  "author": {
+    "name": "personal"
+  }
 }
