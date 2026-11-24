@@ -8,8 +8,8 @@ Research is done only when every item below is done, each with its evidence (com
 5. **How it will be checked.** Code: tests (red/green where the code is testable). Config, infrastructure or non-code work: the checks that prove it works. The plan states which and why.
 6. **Open questions.** Research each one first. It stays open only if it is
    - a decision someone else must make (name who), or
-   - blocked (name the source, what was tried, and what access is needed).
+   - blocked: a source you can't reach, **and the user can't reach it either**. Ask the user as soon as you hit it, with numbered steps (where to go, what to click or run, what to copy back) and what you tried. Keep it open only after they say they can't get it; then name who can.
    Each open question lists what was researched, with sources. Never "I didn't investigate that".
 7. **Freshness.** Directly before presenting, re-check the states of tasks, branches, PRs and builds, and label them "as of <date>".
 
-**Wording.** Say "ready for alignment" only when items 1–7 are done. Otherwise say "Draft, research incomplete:" and list the missing items, then continue researching or ask only for the blocked access. Don't add solution ideas or requirements the user didn't ask for.
+**Wording.** Say "ready for alignment" only when items 1–7 are done. Otherwise say "Draft, research incomplete:" and list the missing items, then continue researching and ask the user for each source you can't reach (item 6). An unasked "no access" is a missing item, not an open question. Don't add solution ideas or requirements the user didn't ask for.

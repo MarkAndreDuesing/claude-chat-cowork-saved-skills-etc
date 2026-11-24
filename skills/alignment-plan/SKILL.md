@@ -12,8 +12,8 @@ Write the alignment plan for the task researched in this session to the user's O
   (replace only when updating that same task's file). If no connector is connected, say so and
   show the plan in the reply instead. If the session ID is not available, put the chat title instead.
 
-Only write it once the research is done as defined in `rules/research-completeness.md` (next to this file); otherwise mark it "Draft, research incomplete:" with the missing items. If something could not be checked (blocked access, missing info),
-say so in the plan as an open question instead of guessing. Do not add ideas or requirements the user did not ask for.
+Only write it once the research is done as defined in `rules/research-completeness.md` (next to this file); otherwise mark it "Draft, research incomplete:" with the missing items. If a source is out of your reach, ask the user for it first, with step-by-step instructions (item 6 of the rules);
+only what they can't get either goes into the plan as an open question, never a guess. Do not add ideas or requirements the user did not ask for.
 
 **File name:** `<ticket key or topic>_<short-kebab-slug>.md`, e.g. `PROJ-123_short-topic.md`
 (use `$ARGUMENTS` if given). One file per task: if it already exists, read it and update it in place
